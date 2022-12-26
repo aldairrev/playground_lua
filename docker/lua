@@ -1,0 +1,5 @@
+#!/bin/bash
+args="$@"
+command="lua $args"
+echo "$command"
+docker exec -it aldairrev_playground_lua bash -c "bash -c \"$command\""
